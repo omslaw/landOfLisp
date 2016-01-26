@@ -7,3 +7,4 @@ second test by changing gitconfig name
 third test using git config user.email and user.name without global option
 inside my personal repo
 
+testing from laptop again
