@@ -4,3 +4,6 @@ test commit from laptop
 
 test commit form workstation at work
 second test by changing gitconfig name
+third test using git config user.email and user.name without global option
+inside my personal repo
+
