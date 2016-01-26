@@ -8,3 +8,4 @@ third test using git config user.email and user.name without global option
 inside my personal repo
 
 testing from laptop again
+one more test changing name
