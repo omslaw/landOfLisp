@@ -93,7 +93,7 @@ start-over
        (b 10))
 21
 
-(+ (1 2) 6)
+(+ (+ 1 2) 6)
 (eq 'fooo 'FoOo)
 nil
 (eq 'foo 'foo)
@@ -117,7 +117,7 @@ He yelled "Stop that thief!" from the busy street."He yelled \"Stop that thief!\
 '(expt 2 3)
 (expt 2 3)
 (cons 'chicken 'cat)
-(chicken . cat)
+;(chicken . cat)
 (cons 'chicken 'nil)
 (chicken)
 (cons 'ckck)
@@ -326,7 +326,7 @@ nil
 ;; Identical list created in different ways still compare as teh same
 (equal '(1 2 3) (cons 1 (cons 2 (cons 3 ()))))
 ;; compare integers
-(equal 5 5)
+(equal 5 5)
 ;; comparing floating point numbers
 (equal 2.5 2.5)
 ;; comparing strings
@@ -429,6 +429,20 @@ nil
 (find 'y '((5 x) (3 y) (7 z)) :key #'cadr)
 (walk 'downstairs)
 (walk 'west)
+(look)
+(+ 2 3)
+
+(defun pickup (object)
+  (cond ((member object
+		 (objects-at *location* *objects* *object-locations*))
+	 (push (list object 'body) *object-locations*)
+	 `(you are now carrying the ,object))
+	(t '(you cannot get that.))))
+(look)
+*edges*
+*location*
+*objects*
+
 
 
 

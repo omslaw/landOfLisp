@@ -13,5 +13,3 @@
 			(attic (living-room downstairs ladder))))
 
 
-
-;; test commit
