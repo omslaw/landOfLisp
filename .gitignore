@@ -16,6 +16,9 @@ local.properties
 .settings/
 .loadpath
 
+# Lisp
+*.fas
+
 # External tool builders
 .externalToolBuilders/
 
